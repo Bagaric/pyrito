@@ -1,0 +1,47 @@
+<!-- New order modal -->
+  <div class="modal fade" id="newItemModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">New Item</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <form>
+
+            <div class="form-group">
+              <label for="merchandiseType">Type</label>
+              <select id="merchandiseType">
+                <option>Gold</option>
+                <option>Gold ore</option>
+                <option>Silver</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="merchandiseQuantity">Quantity</label>
+              <input type="number" class="form-control" id="merchandiseQuantity" placeholder="Ounces">
+            </div>
+
+            <div class="form-group">
+              <label for="merchandisePrice">Price</label>
+              <input type="number" class="form-control" id="merchandisePrice" placeholder="ETH">
+            </div>
+
+            <div class="form-group">
+              <label for="merchandiseDescription">Description</label>
+              <textarea class="form-control" id="merchandiseDescription" rows="4"></textarea>
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="saveItem()" data-toggle="modal" data-target="#blockchainLoader" >Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

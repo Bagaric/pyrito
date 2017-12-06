@@ -1,0 +1,40 @@
+<div class="jumbotron">
+  <h4 class="display-4">Hi. This is only a demo!</h4>
+  <p class="lead">You can use this demo to test how the system would work.</p>
+  <hr class="my-4">
+  <p>It is connected to a real custom blockchain on https://blockchain.josephit.com/. You need to set up a wallet to use this application.</p>
+  <p class="lead">
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Setup
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en">1. Download the MetaMask Chrome extension</a>
+        <a class="dropdown-item" href="#">2. Run MetaMask from the browser</a>
+        <a class="dropdown-item" href="#">3. Import a new wallet using this mnemonic</a>
+        <a class="dropdown-item" href="#">3. Use the app!</a>
+      </div>
+    </div>
+  </p>
+</div>
+
+<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#newItemModal">
+  + New item
+</button>
+
+<hr>
+
+
+<h4>My items</h4>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Quantity</th>
+      <th>Wanted Price</th>
+    </tr>
+  </thead>
+  <tbody id="itemList">
+  </tbody>
+</table>

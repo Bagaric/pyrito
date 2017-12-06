@@ -1,0 +1,18 @@
+version: '2.1'
+
+services:
+
+  pyrito_frontend:
+    restart: always
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: sh /startup.sh
+    ports:
+      - 127.0.0.1:9021:8080
+    networks:
+      - ganachecli_blockchain
+
+networks:
+  ganachecli_blockchain:
+    external: true
